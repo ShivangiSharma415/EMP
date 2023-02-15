@@ -22,10 +22,10 @@ from rest_framework.routers import DefaultRouter
 router= DefaultRouter()
 
 #Register EmployeeViewSet with router
-router.register('EmployeeApi', views.EmployeeViewSet, basename='Employee')
+router.register('EmployeeApi', views.EmployeeModelViewSet, basename='Employee')
 
 #Register EmployeeViewSet with router
-router.register('DepartmentApi', views.DepartmentViewSet, basename='Department')
+router.register('DepartmentApi', views.DepartmentModelViewSet, basename='Department')
 
 #Register ProjectModelViewSet
 router.register('ProjectApi', views.ProjectModelViewSet, basename='Project')
